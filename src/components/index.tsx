@@ -128,7 +128,7 @@ export const Page: React.FC = () => {
     (v: Partial<ResumeConfig>) => {
       const newC = _.assign({}, config, v);
       changeConfig(newC);
-      saveToLocalStorage(query.user as string, newC);
+      // saveToLocalStorage(query.user as string, newC);
     },
     [config, lang]
   );
